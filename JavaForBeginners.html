@@ -4,11 +4,13 @@
         <meta name="author" content="Casey Reyes">
 
         <style>
+
             h1 {
                 text-align: center;
                 font-size: 60px;
                 color:white;
             }
+
             div {
                 background-color: darkgoldenrod;
                 width: 850px;
@@ -16,16 +18,89 @@
                 border: 15px solid gray;
                 margin: auto;
             }
+
+            h2 {
+                /* text-align: center; */
+                font-size: 40px;
+                position: absolute;
+                top: 50%;
+                left:10%;
+                color:white;
+            }
+
+            .button {
+                position:absolute;
+                left: 145px;
+                top: 470px;
+                display: inline-flex;
+                height: 300px;
+                width: 250px;
+                padding: 0;
+                background: #48bda6;
+                border: none;
+                outline: none;
+                border-radius: 5px;
+                overflow: auto;
+                font-family: Copperplate, Papyrus, fantasy;
+                font-size: 16px;
+                font-weight: 500;
+                cursor: pointer;
+            }
+
+            .button_text {
+                display: inline-flex;
+                align-items: center;
+                padding: 0 24px;
+                font-size: 24px;
+                color: white;
+                height: 30%
+            }
+
+            .button:hover {
+                background: #57e1c6;
+                box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+            }
+
+            .button:active {
+                background: #358b7a;
+            }
+
             body {
                 background: blueviolet;
+                ::-webkit-scrollbar {
+                width: 10px;
+                }
+
+                ::-webkit-scrollbar-track {
+                    border-radius: 5px;
+                    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.25);
+                }
+
+                ::-webkit-scrollbar-thumb {
+                    border-radius: 5px;
+                    box-shadow: lightgray;
+                }
+
+                ::-webkit-scrollbar-thumb:hover {
+                    background: #555; 
+                }
             }
         </style>
     </head>
     <body>
-        <h1>Introduction to Java and Programming</h1>
-        <div><strong>Welcome to the Introduction to Java and Programming website! The purpose of this website is 
+        <h1>Introduction to Programming with Java</h1>
+
+        <div><strong>Welcome to the Introduction to Programming with Java website! The purpose of this website is 
             to help those with no programming experience learn how to code using Java in a way that is engaging, 
             interactive, and very easy to understand.
         </strong></div>
+
+        <h2>Available Courses</h2>
+
+        <button type="button" class="button">
+            <span class="button_text">Programming With Java I</span>
+        </button>
+
+        
     </body>
 </html>
